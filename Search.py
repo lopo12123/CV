@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 
 
-def Search(my_img, my_template, my_threshold):
-    '''在大图中找小图，并返回坐标点位'''
+def Search(my_img, my_template, my_threshold=0.9):
+    '''在大图中找小图，并返回坐标点位, my_threshold 是查询的精度(默认为0.9))'''
     '''img 是原始大图 p1; template 是需要找的小图 p2'''
     scale = 1  # 缩放因子
 
