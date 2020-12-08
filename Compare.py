@@ -149,8 +149,10 @@ def Compare(img1, img2, num):
 if __name__ == '__main__':
     ph1 = 'g1.jpg'
     ph2 = 'g2.jpg'
+    result = Compare(ph1, ph2, 1)
+    print('相似度：' + str(result))
 
-    my_result = []
+    '''my_result = []
     my_result.append(Compare(ph1, ph2, 1))
     my_result.append(Compare(ph1, ph2, 2))
     my_result.append(Compare(ph1, ph2, 3))
@@ -161,6 +163,6 @@ if __name__ == '__main__':
     print('相似度：' + str(my_result[1]))
     print('相似度：' + str(my_result[2]))
     print('相似度：' + str(my_result[3]))
-    print('相似度：' + str(my_result[4]))
+    print('相似度：' + str(my_result[4]))'''
 
     # cv2.waitKey(0)
